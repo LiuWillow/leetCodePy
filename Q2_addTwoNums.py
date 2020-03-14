@@ -35,15 +35,16 @@ class Solution(object):
             result.next = ListNode(1)
         return tempResult.next
 
-l1 = ListNode(2)
-l1.next = ListNode(4)
-l1.next.next = ListNode(3)
+def test():
+    l1 = ListNode(2)
+    l1.next = ListNode(4)
+    l1.next.next = ListNode(3)
 
-l2 = ListNode(5)
-l2.next = ListNode(6)
-l2.next.next = ListNode(4)
-result = Solution().addTwoNumbers(l1, l2)
+    l2 = ListNode(5)
+    l2.next = ListNode(6)
+    l2.next.next = ListNode(4)
+    result = Solution().addTwoNumbers(l1, l2)
 
-while(result):
-    print(result.val)
-    result = result.next
+    while(result):
+        print(result.val)
+        result = result.next

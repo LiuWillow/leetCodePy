@@ -9,8 +9,8 @@
 
 # 因为 nums[0] + nums[1] = 2 + 7 = 9
 # 所以返回 [0, 1]
-
-class Solution(object):
+from Q2_addTwoNums import Solution, ListNode
+class ss(object):
     # 暴力版本
     def twoSumForce(self, nums, target):
         for i in range(len(nums) - 1):
@@ -28,4 +28,17 @@ class Solution(object):
             else:
                 dic[nums[i]] = i
 
-    print(twoSumDict(1, [2, 7, 11, 15], 17))
+# print(Solution().twoSumDict([2, 7, 11, 15], 17))
+
+l1 = ListNode(2)
+l1.next = ListNode(4)
+l1.next.next = ListNode(3)
+
+l2 = ListNode(5)
+l2.next = ListNode(6)
+l2.next.next = ListNode(4)
+result = Solution().addTwoNumbers(l1, l2)
+
+while(result):
+    print(result.val)
+    result = result.next
