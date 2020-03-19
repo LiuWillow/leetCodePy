@@ -35,7 +35,7 @@ class Solution(object):
             dic[cha] = r + 1
             r += 1
         return maxLen
-        
+
 
 str = "tmmzuxt"
 print(Solution().lengthOfLongestSubstring(str))
