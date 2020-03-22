@@ -26,6 +26,8 @@
 # T     S     G
 class Solution(object):
     def convert(self, s, numRows):
+        if numRows == 1:
+            return s
         resultArray = []
         for i in range(numRows):
             resultArray.append("")
