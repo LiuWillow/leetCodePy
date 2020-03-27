@@ -23,7 +23,7 @@ class Solution(object):
         """
         if x < 0:
             return False 
-        if x > 0 and x < 10:
+        if x >= 0 and x < 10:
             return True
         if x % 10 == 0:
             return False
