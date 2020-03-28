@@ -25,7 +25,6 @@ class Solution(object):
             else:
                 result = max(hR * (r - l), result)
                 r -= 1
-
         return result
 
 print(Solution().maxArea([1,8,6,2,5,4,8,3,7]))
