@@ -26,6 +26,8 @@ class Solution(object):
                 common = common[:-1]
         return common
 
+
+    # 下面是分治的方式
     def longestCommonPrefixDepart(self, strs):
         return self.longestCommonPrefixChild(strs, 0, len(strs) - 1)
     
@@ -43,5 +45,7 @@ class Solution(object):
         while strRight.find(strLeft) != 0:
             strLeft = strLeft[:-1]
         return strLeft
+    
+    # 分治结束
 
 print(Solution().longestCommonPrefixDepart(["sdfdsf", "sdf", "sdf"]))
