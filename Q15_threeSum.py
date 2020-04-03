@@ -24,6 +24,8 @@ class Solution(object):
         i = 0
         while i < length - 2:
             anser = nums[i]
+            if anser > 0:
+                return result
             j = i + 1
             k = length - 1
             
